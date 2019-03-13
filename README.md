@@ -1,2 +1,2 @@
 # bcl
-Starter code for "Bitcoin Lite"
+Starter code for "Bitcoin Lite".
