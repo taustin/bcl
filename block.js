@@ -106,10 +106,6 @@ module.exports = class Block {
     // Note that we need to do a deep clone of the object.
     this.utxos = prevBlock ? JSON.parse(JSON.stringify(prevBlock.utxos)) : {};
 
-    // We track UTXOs used in this block, but can discard them
-    // after the block has been validated.
-    this.usedOutputs = {};
-
     // Add the initial coinbase reward.
     if (rewardAddr) {
       let output = { address: rewardAddr, amount: COINBASE_AMT_ALLOWED};
